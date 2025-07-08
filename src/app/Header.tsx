@@ -54,9 +54,9 @@ export default function Header() {
             <ChevronLeft strokeWidth={1.4} />
           </div>
           <div className="flex flex-col max-sm:items-center">
-            Luke Berry
+            Gabriel Ferreira
             <span className="text-zinc-500 dark:text-zinc-400">
-              Software Engineer
+              Aspiring Developer
             </span>
           </div>
         </Link>
