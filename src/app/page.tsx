@@ -4,7 +4,6 @@ import {
   SiYoutube,
 } from "@icons-pack/react-simple-icons";
 import { ArrowUpRight, Copy, Download, Send } from "lucide-react";
-import Link from "next/link";
 import { ReactNode } from "react";
 
 const XLogo = () => {
@@ -54,6 +53,7 @@ const ExternalLink = (link: Link) => {
       key={link.description}
       href={link.url}
       target="_blank"
+      rel="noopener noreferrer"
       className="group flex items-center justify-between p-4 transition-all sm:hover:bg-zinc-200 sm:dark:hover:bg-zinc-800"
     >
       <span className="flex items-center gap-4">
@@ -75,18 +75,17 @@ export default function HomePage() {
     <div className="flex flex-col gap-6">
       <p className="text-sm flex flex-col gap-1 text-justify">
         <span>
-          I'm a Brazilian developer passionate about building things since 2021. I
-          currently work in support and maintenance at a national financial
-          institution, where I’ve gained solid experience solving real-world
-          problems.
+          Sou um aspirante à dev brasileiro, gosto de criar coisas desde 2022.
+          Atualmente trabalho com suporte e manutenção em uma instituição
+          financeira nacional, onde adquiri sólida experiência resolvendo problemas
+          do mundo real.
         </span>
         <span>
-          I enjoy working with Python, PHP, and web technologies in general —
-          especially anything that helps create clean, functional interfaces.
+          Tenho afinidade com PHP, Javascript, Python, MySQL, MongoDB e já tive contato com outras linguagens pela vida.
         </span>
         <span>
-          Outside of work, you'll probably find me playing online games, enjoying
-          nature, or hitting the volleyball court.
+          Fora do trabalho, você provavelmente vai me encontrar jogando games
+          online, curtindo a natureza ou no modo caverna.
         </span>
       </p>
       <div className="divide-y divide-zinc-400 overflow-hidden rounded ring-1 ring-zinc-400 dark:divide-zinc-500 dark:ring-zinc-500">

@@ -6,7 +6,7 @@ import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 
 function isThemeSetToDark() {
-  if (window == undefined) return;
+  if (typeof window === 'undefined') return;
 
   return (
     localStorage.theme === "dark" ||
@@ -85,18 +85,6 @@ export default function Header() {
             aria-current={path === "/projects" ? "page" : undefined}
           >
             /projects
-            <Triangle
-              aria-hidden="true"
-              className="absolute left-1/2 mt-1 hidden size-2 fill-sky-500 text-zinc-800 group-aria-[current=page]:block dark:fill-sky-600 dark:text-transparent"
-            />
-          </Link>
-          <Link
-            className="group relative rounded px-2 py-px ring-1 ring-sky-500 ring-opacity-0 transition-all sm:hover:ring-opacity-100 dark:ring-sky-600 dark:ring-opacity-0"
-            href="/articles"
-            aria-label="View articles"
-            aria-current={path.startsWith("/articles") ? "page" : undefined}
-          >
-            /articles
             <Triangle
               aria-hidden="true"
               className="absolute left-1/2 mt-1 hidden size-2 fill-sky-500 text-zinc-800 group-aria-[current=page]:block dark:fill-sky-600 dark:text-transparent"
