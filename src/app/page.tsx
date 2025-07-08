@@ -28,7 +28,7 @@ interface Link {
 
 const externalLinks: Link[] = [
   {
-    name: "LinkedIn",
+    name: "LinkedInn",
     description: "follow my career",
     url: "https://www.linkedin.com/in/gabriel-ferreira-de-souza-7047632a5/",
     icon: <SiLinkedin className="fill-[#0077B5] dark:fill-zinc-200" />,
